@@ -1,0 +1,63 @@
+-- Create and use database
+CREATE DATABASE IF NOT EXISTS hospital_db;
+USE hospital_db;
+
+-- Doctors table
+CREATE TABLE IF NOT EXISTS doctors (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    specialization VARCHAR(100)
+);
+
+-- Patients table
+CREATE TABLE IF NOT EXISTS patients (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    gender VARCHAR(10)
+);
+
+-- Appointments table
+CREATE TABLE IF NOT EXISTS appointments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    patient_name VARCHAR(100),
+    doctor_name VARCHAR(100),
+    date DATE
+);
+
+-- Diagnosis table
+CREATE TABLE IF NOT EXISTS diagnosis (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    patient_name VARCHAR(100),
+    details VARCHAR(255)
+);
+
+-- Prescription table
+CREATE TABLE IF NOT EXISTS prescription (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    patient VARCHAR(100),
+    doctor VARCHAR(100),
+    medicines TEXT
+);
+
+-- Medical store table
+CREATE TABLE IF NOT EXISTS medical_store (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    medicine_name VARCHAR(100),
+    quantity INT
+);
+
+-- Accounts table
+CREATE TABLE IF NOT EXISTS accounts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    acc_name VARCHAR(100),
+    amount DOUBLE
+);
+
+-- New patients table
+CREATE TABLE IF NOT EXISTS newpatients (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    disease VARCHAR(50)
+);
