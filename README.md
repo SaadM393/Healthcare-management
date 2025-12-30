@@ -95,7 +95,7 @@ healthcare-management/
 
 1. Clone the repository
 
-git clone https://github.com/your-username/hospital-management-system.git
+git clone https://github.com/SaadM393/Healthcare-management
 
 
 2. Open the project in Eclipse IDE
