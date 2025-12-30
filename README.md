@@ -38,7 +38,7 @@ Backend: Java, Servlets (Jakarta Servlet API)
 
 Database: MySQL (via JDBC)
 
-Server: Apache Tomcat 10/11
+Server: Apache Tomcat 11
 
 IDE: Eclipse
 
