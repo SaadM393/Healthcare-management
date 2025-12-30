@@ -121,7 +121,7 @@ http://localhost:8084/healthcare-management/
 
 📸 Screenshots
 
-> Add screenshots of Dashboard, Patients, Doctors, Appointments pages here
+> available in project-content
 
 
 
